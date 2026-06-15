@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio Acadêmico</title>
+  <meta name="description" content="Portfólio acadêmico digital — projetos, currículo e habilidades." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="#topo" class="navbar__brand" data-bind="profile.name"></a>
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="navbar__nav" id="navMenu">
+        <a href="#sobre">Sobre</a>
+        <a href="#curriculo">Currículo</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#trabalhos">Trabalhos</a>
+        <a href="#certificados">Certificados</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="topo">
+
+    <!-- ===================== INTRODUÇÃO ===================== -->
+    <section id="sobre" class="section hero">
+      <div class="container hero__grid">
+        <div class="hero__photo">
+          <img id="profilePhoto" src="" alt="Foto de perfil" />
+        </div>
+        <div class="hero__text">
+          <p class="eyebrow" data-bind="profile.formation"></p>
+          <h1 data-bind="profile.name"></h1>
+          <p class="lead" data-bind="profile.objective"></p>
+          <ul class="tag-list" id="profileAreas"></ul>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projetos">Ver projetos</a>
+            <a class="btn btn--ghost" href="#contato">Contato</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CURRÍCULO ===================== -->
+    <section id="curriculo" class="section">
+      <div class="container">
+        <h2 class="section__title">Currículo</h2>
+
+        <div class="resume-grid">
+          <div class="resume-block">
+            <h3>Formação acadêmica</h3>
+            <ul class="list" id="educationList"></ul>
+          </div>
+          <div class="resume-block">
+            <h3>Cursos complementares</h3>
+            <ul class="list" id="coursesList"></ul>
+          </div>
+          <div class="resume-block">
+            <h3>Certificações</h3>
+            <ul class="list" id="certificationsSummaryList"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJETOS ===================== -->
+    <section id="projetos" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Projetos</h2>
+        <p class="section__subtitle">Principais projetos acadêmicos desenvolvidos ao longo do curso.</p>
+        <div class="cards" id="projectsList"></div>
+      </div>
+    </section>
+
+    <!-- ===================== HABILIDADES ===================== -->
+    <section id="habilidades" class="section">
+      <div class="container">
+        <h2 class="section__title">Habilidades</h2>
+        <div class="skills-grid">
+          <div class="skills-block">
+            <h3>Técnicas (Hard Skills)</h3>
+            <ul class="tag-list" id="hardSkillsList"></ul>
+          </div>
+          <div class="skills-block">
+            <h3>Comportamentais (Soft Skills)</h3>
+            <ul class="tag-list" id="softSkillsList"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TRABALHOS ACADÊMICOS ===================== -->
+    <section id="trabalhos" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Documentos e Trabalhos Acadêmicos</h2>
+        <div class="cards" id="academicWorksList"></div>
+      </div>
+    </section>
+
+    <!-- ===================== CERTIFICADOS ===================== -->
+    <section id="certificados" class="section">
+      <div class="container">
+        <h2 class="section__title">Certificações / Certificados</h2>
+        <div class="cards cards--certificates" id="certificatesList"></div>
+      </div>
+    </section>
+
+    <!-- ===================== EVENTOS ===================== -->
+    <section id="eventos" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Participação em Eventos e Atividades Extracurriculares</h2>
+        <ul class="timeline" id="eventsList"></ul>
+      </div>
+    </section>
+
+    <!-- ===================== CONTATO ===================== -->
+    <section id="contato" class="section hero--last">
+      <div class="container contact">
+        <h2 class="section__title">Contato</h2>
+        <p class="section__subtitle">Vamos conversar sobre oportunidades, projetos e colaborações.</p>
+        <ul class="contact-list" id="contactList"></ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="footerYear"></span> <span data-bind="profile.name"></span> — Portfólio Acadêmico</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
