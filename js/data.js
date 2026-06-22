@@ -273,6 +273,11 @@ const PORTFOLIO_DATA = {
     },
   ],
 
+  // ---------- Documentos e Trabalhos Acadêmicos ----------
+  // Use para TCC, artigos, relatórios de iniciação científica, etc.
+  academicWorks: [
+  ],
+
   // ---------- Certificações / Certificados ----------
   certificates: [
     {
