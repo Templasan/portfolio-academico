@@ -6,6 +6,7 @@
   <title>Portfólio Acadêmico</title>
   <meta name="description" content="Portfólio acadêmico digital — projetos, currículo e habilidades." />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 <body>
 
@@ -18,10 +19,11 @@
       <nav class="navbar__nav" id="navMenu">
         <a href="#sobre">Sobre</a>
         <a href="#curriculo">Currículo</a>
-        <a href="#projetos">Projetos</a>
         <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
         <a href="#trabalhos">Trabalhos</a>
-        <a href="#certificados">Certificados</a>
+        <a href="#certificados">Cursos e Certificados</a>
+        <a href="#certificacoes">Certificações</a>
         <a href="#eventos">Eventos</a>
         <a href="#contato">Contato</a>
       </nav>
@@ -43,6 +45,7 @@
           <ul class="tag-list" id="profileAreas"></ul>
           <div class="hero__actions">
             <a class="btn btn--primary" href="#projetos">Ver projetos</a>
+            <a class="btn btn--ghost" href="assets/misc/curriculo.pdf" download>Baixar currículo</a>
             <a class="btn btn--ghost" href="#contato">Contato</a>
           </div>
         </div>
@@ -62,38 +65,41 @@
           <div class="resume-block">
             <h3>Cursos complementares</h3>
             <ul class="list" id="coursesList"></ul>
+            <a href="#certificados" class="btn btn--ghost btn--small resume-courses-btn">Confira aqui meus cursos</a>
           </div>
           <div class="resume-block">
             <h3>Certificações</h3>
-            <ul class="list" id="certificationsSummaryList"></ul>
+            <p id="certificationsSummaryText" class="resume-cert-note"></p>
+          </div>
+        </div>
+
+        <div class="career-roadmap" id="careerRoadmap"></div>
+      </div>
+    </section>
+
+    <!-- ===================== HABILIDADES ===================== -->
+    <section id="habilidades" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Habilidades</h2>
+        <div class="skills-grid">
+          <div class="skills-block">
+            <h3>Técnicas (Hard Skills)</h3>
+            <ul class="skills-list" id="hardSkillsList"></ul>
+          </div>
+          <div class="skills-block">
+            <h3>Comportamentais (Soft Skills)</h3>
+            <ul class="skills-list" id="softSkillsList"></ul>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ===================== PROJETOS ===================== -->
-    <section id="projetos" class="section section--alt">
+    <section id="projetos" class="section">
       <div class="container">
         <h2 class="section__title">Projetos</h2>
         <p class="section__subtitle">Principais projetos acadêmicos desenvolvidos ao longo do curso.</p>
         <div class="cards" id="projectsList"></div>
-      </div>
-    </section>
-
-    <!-- ===================== HABILIDADES ===================== -->
-    <section id="habilidades" class="section">
-      <div class="container">
-        <h2 class="section__title">Habilidades</h2>
-        <div class="skills-grid">
-          <div class="skills-block">
-            <h3>Técnicas (Hard Skills)</h3>
-            <ul class="tag-list" id="hardSkillsList"></ul>
-          </div>
-          <div class="skills-block">
-            <h3>Comportamentais (Soft Skills)</h3>
-            <ul class="tag-list" id="softSkillsList"></ul>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -108,8 +114,20 @@
     <!-- ===================== CERTIFICADOS ===================== -->
     <section id="certificados" class="section">
       <div class="container">
-        <h2 class="section__title">Certificações / Certificados</h2>
+        <h2 class="section__title">Cursos e Certificados</h2>
         <div class="cards cards--certificates" id="certificatesList"></div>
+      </div>
+    </section>
+
+    <!-- ===================== CERTIFICAÇÕES ===================== -->
+    <section id="certificacoes" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Certificações</h2>
+        <div class="cert-empty-state">
+          <p class="cert-empty-state__text">
+            Esta seção ainda está em construção. Planejo me preparar e expandir este espaço com certificações que validem minhas competências técnicas e agreguem valor à minha trajetória profissional.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -138,6 +156,7 @@
     </div>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
 </body>
