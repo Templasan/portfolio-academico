@@ -111,7 +111,7 @@ const PORTFOLIO_DATA = {
       role: "Atuei no desenvolvimento do backend em Java/Spring Boot, modelagem do banco de dados e integração com o frontend React. Em um ambiente de mudanças constantes de requisito, pratiquei resolução de conflitos internos ao time para manter o alinhamento técnico, e adaptabilidade para replanejar entregas sem comprometer a qualidade.",
       softsk: [
         {
-          name: "Resiliência & Superação",
+          name: "Resiliência",
           description: "Passei por uma troca de equipe não planejada logo no início do projeto. Absorvi a mudança, me integrei a um novo time e sustentei entregas consistentes até o fim do semestre, mantendo o ritmo apesar da reorganização.",
         },
         {
@@ -271,11 +271,6 @@ const PORTFOLIO_DATA = {
       results: "Pesquisa ainda em desenvolvimento.",
       link: "",
     },
-  ],
-
-  // ---------- Documentos e Trabalhos Acadêmicos ----------
-  // Use para TCC, artigos, relatórios de iniciação científica, etc.
-  academicWorks: [
   ],
 
   // ---------- Certificações / Certificados ----------
